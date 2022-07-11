@@ -34,6 +34,11 @@ public class YomobPlugin extends GodotPlugin
         //TGSDK.setDebugModel(true);
         TGSDK.initialize(activity,appid,null);
     }
+   /* @UsedByGodot
+    public void initDemoSDK()
+    {
+
+    }*/
     @UsedByGodot
     public void showTestView(String sceneID)
     {

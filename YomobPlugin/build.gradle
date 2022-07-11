@@ -27,9 +27,21 @@ android {
 
 dependencies {
     //android studio自带
-    implementation 'androidx.appcompat:appcompat:1.3.0'
-    implementation 'com.google.android.material:material:1.4.0'
-
+    /*implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.4.0'*/
+    // 添加 TGSDK 强制依赖库
+    compileOnly 'androidx.appcompat:appcompat:1.0.0'
+    compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
+    compileOnly 'com.squareup.okio:okio:1.14.0'
+    compileOnly 'com.squareup.okhttp3:okhttp:3.11.0'
+    // 添加第三方广告插件需要的依赖库
+    // By wangmai
+    compileOnly 'com.google.code.gson:gson:2.8.2'
+    // By wangmai
+    compileOnly 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
+    // By wangmai
+    compileOnly 'com.squareup.picasso:picasso:2.5.2'
+    // 添加第三方广告商广告插件
     compileOnly fileTree(dir: "libs", includes: ["*.aar"])
     //godot
     /*compileOnly(name: 'godot.aar', ext: 'aar')
