@@ -17,7 +17,7 @@
     <application>
         <meta-data
             android:name="org.godotengine.plugin.v1.PocketPlugin"
-            android:value="com.xsh.yomobplugin.YomobPlugin.java"/>
+            android:value="com.xsh.yomobplugin.YomobPlugin"/>
         <!-- Guangdiantong -->
         <provider
             android:name="androidx.core.content.FileProvider"
